@@ -6,7 +6,7 @@ do
 	echo -n "Checking $x... "
 	p_out=$(./$1 < "$2"/"$x")
 	ris=$(cat "$2"/"$(echo $x | sed s/\.in/\.ans/)")
-	if [[ "$p_out" -eq "$ris" ]]
+	if [ "$p_out" == "$ris" ]
 	then
 		echo "correct"
 	else
