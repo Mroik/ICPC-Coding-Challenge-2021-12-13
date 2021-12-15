@@ -22,9 +22,7 @@ int main()
 	for(int x = 0; x < n; x++)
 		scanf(" %d", A+x);
 
-	min = sum(A, 0) - sum(A+1, n);
-	if(min < 0)
-		min = -min;
+	min = sum(A, n);
 	for(int x = 1; x < n; x++)
 	{
 		temp = sum(A, x) - sum(A+x, n-x);
