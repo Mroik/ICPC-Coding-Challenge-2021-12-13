@@ -53,4 +53,6 @@ int main()
 		scanf("%d", A+x);
 
 	printf("%d\n", jump(0, n, A, m, cache));
+	free(A);
+	free(cache);
 }

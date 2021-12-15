@@ -34,4 +34,5 @@ int main()
 			min = temp;
 	}
 	printf("%d\n", min);
+	free(A);
 }

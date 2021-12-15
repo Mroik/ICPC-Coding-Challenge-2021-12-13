@@ -74,4 +74,5 @@ int main()
 	}
 
 	printf("%d\n", tot);
+	free(A);
 }
